@@ -10,7 +10,7 @@ Set the square-lattice constant to $a=1$. A unit cell contains two magnetic site
 
 ![Figure 1: monolayer lattice and spin-resolved bands](fig1_monolayer.png)
 
-Along $x$, hopping between like $M$ sites is $t_x$, whereas hopping between like $N$ sites is $t_y$. Along $y$, these values are interchanged. Thus the spatial operation $m_{xy}:(x,y)\mapsto(y,x)$ exchanges the two sublattices and their directional hoppings. The nearest diagonal $M$–$N$ hopping is $t_{MN}$. Figure 1(b) shows the resulting bands along $Y\to\Gamma\to X\to M\to\Gamma$.
+Along $x$, hopping between like $M$ sites is $t_x$, whereas hopping between like $N$ sites is $t_y$. Along $y$, these values are interchanged. Thus the spatial operation $m_{xy}:(x,y)\mapsto(y,x)$ exchanges the two sublattices and their directional hoppings. The nearest diagonal M–N hopping is $t_{MN}$. Figure 1(b) shows the resulting bands along $Y\to\Gamma\to X\to M\to\Gamma$.
 
 Use the basis $(|M,\uparrow\rangle,|N,\uparrow\rangle,|M,\downarrow\rangle,|N,\downarrow\rangle)$. Without SOC the Hamiltonian separates into two $2\times2$ blocks. With $s=+1$ for up and $s=-1$ for down, and Pauli matrices $\tau_i$ acting on $(M,N)$,
 
@@ -38,7 +38,7 @@ The exchange term $-s\Delta\tau_z$, with $\Delta>0$, favors up spin on $M$ and d
 
 The negative $t_y$ is the sign of an effective orbital hopping, not a negative distance. On a $301\times301$ momentum grid, the half-filled monolayer has valence-band maximum (VBM) $-0.1000$, conduction-band minimum (CBM) $+0.1000$, and an indirect gap of $0.2000$.
 
-Exchanging $k_x$ and $k_y$, exchanging $M$ and $N$, and reversing spin leaves the spectrum invariant. Nevertheless, up and down bands can differ at a *fixed generic* $\mathbf k$. Their roles interchange between $X=(\pi,0)$ and $Y=(0,\pi)$, producing a $d$-wave-like momentum pattern; they coincide on $k_x=k_y$. Here “$d$-wave-like” describes the sign structure of the spin splitting, **not** superconducting pairing.
+Exchanging $k_x$ and $k_y$, exchanging $M$ and $N$, and reversing spin leaves the spectrum invariant. Nevertheless, up and down bands can differ at a *fixed generic* $\mathbf k$. Their roles interchange between $X=(\pi,0)$ and $Y=(0,\pi)$, producing a d-wave-like momentum pattern; they coincide on $k_x=k_y$. Here “d-wave-like” describes the sign structure of the spin splitting, **not** superconducting pairing.
 
 ## 2. Stack inversion-partner layers
 
@@ -51,7 +51,7 @@ Label the layers $u$ and $d$. Their sites and moments are:
 | $M_d$ | $(0,1/2,0.4)$ | $\uparrow$ |
 | $N_d$ | $(1/2,0,0.4)$ | $\downarrow$ |
 
-Inversion about $(1/4,1/4,1/2)$ exchanges $M_u\leftrightarrow N_d$ and $N_u\leftrightarrow M_d$. Consequently, the lower layer must use the *inversion-partner* hopping anisotropy: its $d(\mathbf k)$ term has the opposite sign in the basis below. Simply copying every upper-layer matrix element to the lower layer would not give the intended symmetry. Keep only vertical hoppings $M_u$–$M_d$ and $N_u$–$N_d$, both equal to $-t_\perp$.
+Inversion about $(1/4,1/4,1/2)$ exchanges $M_u\leftrightarrow N_d$ and $N_u\leftrightarrow M_d$. Consequently, the lower layer must use the *inversion-partner* hopping anisotropy: its $d(\mathbf k)$ term has the opposite sign in the basis below. Simply copying every upper-layer matrix element to the lower layer would not give the intended symmetry. Keep only vertical hoppings between $M_u$ and $M_d$, and between $N_u$ and $N_d$, both equal to $-t_\perp$.
 
 For each spin, in the basis $(M_u,N_u,M_d,N_d)$,
 
@@ -68,7 +68,7 @@ $$
 All $\epsilon_0,d,g$ entries are evaluated at the same $\mathbf k$. The perpendicular-field term is a **layer-dependent electrostatic potential**,
 
 $$
-H_E=V\lambda_z,\qquad \lambda_z=\operatorname{diag}(1,1,-1,-1).
+H_E=V\lambda_z,\qquad \lambda_z=\mathrm{diag}(1,1,-1,-1).
 $$
 
 The upper and lower onsite shifts are $+V$ and $-V$, so their difference is $2V$. This term neither flips spin nor represents a Zeeman field. We use $t_\perp=0.08$ and compare $V=0$ with $V=0.06$.
@@ -107,7 +107,7 @@ P_{\mathrm{orb}}H_{\uparrow}^{\mathrm{bi}}(\mathbf k;V)P_{\mathrm{orb}}^{-1}
 =H_{\downarrow}^{\mathrm{bi}}(\mathbf k;-V),
 $$
 
-which is **not** $H_{\downarrow}^{\mathrm{bi}}(\mathbf k;V)$ for fixed nonzero $V$. The electric field breaks $PT$, removing the requirement of spin degeneracy. A combined operation that swaps $k_x,k_y$ and $M/N$ while reversing spin still relates the $X$ and $Y$ responses. Thus the field reveals a momentum-dependent, altermagnetic-like splitting rather than a uniform same-sign splitting; the bands remain degenerate on the $\Gamma$–$M$ diagonal.
+which is **not** $H_{\downarrow}^{\mathrm{bi}}(\mathbf k;V)$ for fixed nonzero $V$. The electric field breaks $PT$, removing the requirement of spin degeneracy. A combined operation that swaps $k_x,k_y$ and $M/N$ while reversing spin still relates the $X$ and $Y$ responses. Thus the field reveals a momentum-dependent, altermagnetic-like splitting rather than a uniform same-sign splitting; the bands remain degenerate on the Gamma–M diagonal.
 
 ## 4. Constant-energy contours and hidden layer polarization
 
